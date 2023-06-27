@@ -10,9 +10,9 @@ export default function Clients() {
     if(error) return <p>Error</p>
 
     return <>
-        {!loading && !error && <table className="table">
+        {!loading && !error && <table>
             <thead>
-                <tr className="table--row">
+                <tr>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Phone</th>
