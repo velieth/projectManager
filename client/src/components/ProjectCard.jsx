@@ -21,7 +21,7 @@ export default function ProjectCard({ project }) {
     <div className="project--card">
       <div className="status--bar">
         {generateStatus()}
-        <p>{project.status}</p>
+        <p>Status: <strong>{project.status}</strong></p>
       </div>
       <h5>{project.name}</h5>
       <a className="button" href={`/projects/${project.id}`}>

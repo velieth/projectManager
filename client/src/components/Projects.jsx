@@ -10,9 +10,7 @@ export default function Clients() {
     if(error) return <p>Error</p>
 
     return (
-    <div>
-        <hr></hr>
-        <h1>Projects</h1>
+    <div className="projects">
         { data.projects.length > 0 ? (
             <div className="projects--container">
                 {data.projects.map((project) => (
@@ -20,5 +18,7 @@ export default function Clients() {
                 ))}
             </div>
         ) : (<p>No Projects</p>)}
-    </div>)
+        <hr style={{width: "100%"}}></hr>
+    </div>
+    )
 }

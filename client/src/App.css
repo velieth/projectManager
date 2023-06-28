@@ -144,10 +144,15 @@ tr {
   text-align: left;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .projects--container {
   display: flex;
   gap: 3rem;
-  margin-top: 2rem;
 }
 
 .project--card {
@@ -167,4 +172,9 @@ tr {
 .status-dot {
   height: 10px;
   width: 10px;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
 }
